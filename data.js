@@ -8,11 +8,11 @@ const DASHBOARD_DATA = {
   // ── Summary Metrics ──
   summary: {
     totalSpend: 16926.26,
-    totalViews: 7812033,
+    totalViews: 7951402,
     avgCPM: 2.17,
     videosPaid: 911,
     totalOwed: 6524.53,
-    totalPosts: 1111,
+    totalPosts: 1116,
     activeCampaign: "BETA - MAKET.AI"
   },
 
@@ -20,7 +20,7 @@ const DASHBOARD_DATA = {
   creators: [
     {
       name: "Jett Suherwan",
-      handles: ["@maket.jef (IG)", "@maket.jet (TikTok)"],
+      handles: ["@maket.jef", "@maket.jet"],
       views: 4457079,
       engagement: 67083,
       posts: 131,
@@ -37,7 +37,7 @@ const DASHBOARD_DATA = {
     },
     {
       name: "Teya Pelletier",
-      handles: ["@teya.maket (TikTok/IG)"],
+      handles: ["@teya.maket"],
       views: 1203334,
       engagement: 102756,
       posts: 76,
@@ -54,7 +54,7 @@ const DASHBOARD_DATA = {
     },
     {
       name: "Miftahol Jannah",
-      handles: ["@maketmj (IG)", "@maketmj6 (TikTok)"],
+      handles: ["@maketmj", "@maketmj6"],
       views: 766713,
       engagement: 26993,
       posts: 156,
@@ -64,14 +64,14 @@ const DASHBOARD_DATA = {
       delivered: "33/42",
       status: "active",
       trend: "stable",
-      topHook: "(Pure screen recording demo — no text hook)",
+      topHook: "my architecture professor is going to HATE me",
       topHookViews: 506600,
-      action: "Lean into pure demo format — her strength. Test with trending audio overlay.",
-      notes: "Her #3 overall post had NO text hook — just a screen recording of Maket. This 'pure demo' format is under-tested. Great CPM at $0.64. Most reliable poster (33/42 delivered)."
+      action: "Test more Authority Defiance hooks — her #3 post proves this angle works for her audience. Also test competitor contrast (Pinterest).",
+      notes: "Her #3 overall post (506K views) used 'my architecture professor is going to HATE me' — an Authority Defiance hook, NOT a pure demo. Great CPM at $0.64. Most reliable poster (33/42 delivered). Authority Defiance is a brand new hook category with massive potential."
     },
     {
       name: "Dominik Babu",
-      handles: ["@domdoesmaket (IG)"],
+      handles: ["@domdoesmaket"],
       views: 567285,
       engagement: 3686,
       posts: 55,
@@ -81,14 +81,14 @@ const DASHBOARD_DATA = {
       delivered: "34/42",
       status: "active",
       trend: "up",
-      topHook: "I can't believe I didn't find this sooner",
+      topHook: "I could literally KISS the interior designer that showed me this hack",
       topHookViews: 451800,
       action: "BEST CPM — give him storytelling origin hook for maximum ROI",
-      notes: "Best CPM on the roster at $0.26. If storytelling origin hooks work for him, the ROI will be extraordinary. His 452K post proves he can hit big numbers."
+      notes: "Best CPM on the roster at $0.26. His 452K post used the KISS hook (Hyperbolic Gratitude), NOT 'I can't believe I didn't find this sooner' — the SideShift caption was misleading. If storytelling origin hooks work for him, the ROI will be extraordinary."
     },
     {
       name: "Kyle Poselero",
-      handles: ["@buildingblocksky (IG)"],
+      handles: ["@buildingblocksky"],
       views: 251085,
       engagement: 3528,
       posts: 72,
@@ -98,14 +98,14 @@ const DASHBOARD_DATA = {
       delivered: "36/42",
       status: "active",
       trend: "stable",
-      topHook: "this is so goated",
+      topHook: "I could literally KISS the interior designer that showed me this hack",
       topHookViews: 91291,
       action: "Test wasted effort hook — '$5K architect' angle fits his builder persona",
       notes: "Solid delivery rate (36/42) but avg views lagging. His audience is more builder/contractor focused — financial hooks should resonate. Test 'my architect charged $5K for what this does in 2 minutes'."
     },
     {
       name: "Kalyssa Tiffin",
-      handles: ["@maket.kalyssa (IG)"],
+      handles: ["@maket.kalyssa"],
       views: 261845,
       engagement: 6850,
       posts: 156,
@@ -122,7 +122,7 @@ const DASHBOARD_DATA = {
     },
     {
       name: "Mojan M",
-      handles: ["@mo.maket1 (IG)"],
+      handles: ["@mo.maket1"],
       views: 30255,
       engagement: 551,
       posts: 23,
@@ -139,7 +139,7 @@ const DASHBOARD_DATA = {
     },
     {
       name: "Paige Eligon",
-      handles: ["@paige.eligon (TikTok)"],
+      handles: ["@paige.eligon"],
       views: 13996,
       engagement: 369,
       posts: 25,
@@ -211,11 +211,11 @@ const DASHBOARD_DATA = {
   hookCategories: [
     {
       name: "Storytelling Origin",
-      avgViews: 1300000,
+      avgViews: 697500,
       bestExample: "I owe my future home design to the person I met on the train",
-      bestViews: 1300000,
-      timesUsed: 1,
-      status: "under-tested",
+      bestViews: 1327000,
+      timesUsed: 2,
+      status: "proven",
       whyItWorks: "Curiosity + narrative = maximum watch-through. The brain needs to close the story loop. Research shows story hooks have the highest completion rates in 2026 UGC content. This format forces the viewer to watch the entire video to understand the origin story.",
       researchBacking: "Terra Market Group's 2026 hook study found story hooks achieve 70%+ completion rates — the threshold needed for TikTok's algorithm to boost distribution. The winning Maket format is: expressive face reaction + text overlay hook + Maket demo. No spoken hook needed — the silence keeps it feeling native, not like an ad.",
       nextTests: [
@@ -227,11 +227,11 @@ const DASHBOARD_DATA = {
     },
     {
       name: "Hyperbolic Gratitude",
-      avgViews: 401540,
+      avgViews: 342000,
       bestExample: "I could literally KISS the interior designer that showed me this",
-      bestViews: 795200,
-      timesUsed: 6,
-      status: "proven",
+      bestViews: 798000,
+      timesUsed: 7,
+      status: "proven-workhorse",
       whyItWorks: "Extreme emotional expression creates pattern interrupt in the feed. The exaggeration signals 'this is worth stopping for.' The specificity of 'interior designer' adds credibility vs generic 'someone.' Works across demographics because gratitude is universally relatable.",
       researchBacking: "MarketingBlocks' 2026 viral hook analysis identifies 'emotional amplification' as the #2 driver of share-worthy content. Hooks that express extreme positive emotion (KISS, obsessed, life-changing) trigger mirror neurons — viewers feel the excitement vicariously.",
       nextTests: [
@@ -242,11 +242,11 @@ const DASHBOARD_DATA = {
     },
     {
       name: "Competitor Contrast",
-      avgViews: 197200,
+      avgViews: 198000,
       bestExample: "You're telling me I spent a year using ChatGPT to design my home when I could've just done THIS",
-      bestViews: 317400,
-      timesUsed: 3,
-      status: "high-potential",
+      bestViews: 319000,
+      timesUsed: 4,
+      status: "proven",
       whyItWorks: "Creates cognitive dissonance — the viewer realizes they might also be wasting time with the wrong tool. The 'THIS' creates an irresistible open loop. Naming a specific competitor (ChatGPT, Pinterest) makes it concrete and relatable rather than abstract.",
       researchBacking: "The 'bold statement / controversy' hook type is one of 7 high-converting hook types identified by Xwork's 2026 Hook Matrix. Competitor callouts work because they tap into loss aversion — people fear they're missing a better option. ChatGPT hook had 2.50% eng rate (highest in top 20) because it challenges an assumption viewers hold.",
       nextTests: [
@@ -259,11 +259,11 @@ const DASHBOARD_DATA = {
     },
     {
       name: "Wasted Effort / Regret",
-      avgViews: 126133,
-      bestExample: "You're telling me I spent years in architecture school when I could've done THIS",
-      bestViews: 178700,
-      timesUsed: 4,
-      status: "proven",
+      avgViews: 139000,
+      bestExample: "You're telling me I spent 4 years in architecture school when I could've done THIS",
+      bestViews: 179000,
+      timesUsed: 2,
+      status: "high-potential",
       whyItWorks: "Loss aversion is the strongest psychological motivator — stronger than potential gains. Showing wasted time/money makes the viewer immediately calculate their own wasted effort. The regret is relatable; the solution provides relief.",
       researchBacking: "Warning/negative hooks ('STOP', 'I wasted', 'Don't make this mistake') are among the highest performers in 2026 per SendShort's analysis of 14 top TikTok hook types. Loss aversion bias means people are 2x more motivated by avoiding losses than achieving equivalent gains. Renovation mistake content consistently outperforms aspirational content.",
       nextTests: [
@@ -274,14 +274,30 @@ const DASHBOARD_DATA = {
       ]
     },
     {
+      name: "Authority Defiance",
+      avgViews: 508000,
+      bestExample: "my architecture professor is going to HATE me",
+      bestViews: 508000,
+      timesUsed: 1,
+      status: "high-potential",
+      whyItWorks: "Creates an 'us vs them' dynamic — the viewer sides with the creator against an authority figure. The word 'HATE' is visceral and stops the scroll. It implies the tool is so powerful it threatens the establishment. Appeals to both students and anyone who's felt intimidated by professionals.",
+      researchBacking: "Bold statement / controversy hooks are among the highest-converting hook types (Xwork 2026 Hook Matrix). Authority defiance taps into anti-establishment sentiment — especially powerful with Gen Z audiences. The emotional charge ('HATE') triggers stronger engagement than neutral discovery hooks.",
+      nextTests: [
+        "my interior design teacher is going to lose it when she sees this",
+        "architects don't want you to know about this website",
+        "my contractor told me this was impossible. then I showed him THIS.",
+        "my realtor said I couldn't afford a designer. watch this."
+      ]
+    },
+    {
       name: "Discovery / FOMO",
-      avgViews: 177856,
-      bestExample: "I can't believe I didn't find this sooner",
-      bestViews: 451800,
-      timesUsed: 5,
-      status: "saturated",
-      whyItWorks: "Universal hook — everyone has experienced the feeling of discovering something late. Creates urgency: 'if they just found it, maybe I haven't either.' Simple and low-friction for creators to deliver authentically.",
-      researchBacking: "Curiosity hooks are the #1 hook type in Xwork's Hook Matrix. They work by opening an information gap the viewer must close. However, this category is showing fatigue in Maket's data — likely because it's been overused by Jett with the same phrasing.",
+      avgViews: 0,
+      bestExample: "I can't believe how easy this is",
+      bestViews: 0,
+      timesUsed: 0,
+      status: "caption-only",
+      whyItWorks: "NOTE: Previously listed as 5 uses with 451K+ views, but the SideShift audit revealed 'I can't believe I didn't find this sooner' was only a CAPTION — the actual video text overlays on those posts were KISS hooks (Hyperbolic Gratitude) or other categories. This category has NOT been tested as a video text overlay hook. The captions like 'i can't believe how easy this is' and 'this website is so goated' are just generic captions, not the hooks driving performance.",
+      researchBacking: "Curiosity hooks are the #1 hook type in Xwork's Hook Matrix. Worth testing as an actual video text overlay since the caption version was never the real hook.",
       nextTests: [
         "Nobody's talking about this AI tool for homeowners.",
         "What if you could see 10 versions of your dream home before hiring anyone?",
@@ -289,31 +305,16 @@ const DASHBOARD_DATA = {
       ]
     },
     {
-      name: "Pure Demo (No Text Hook)",
-      avgViews: 506600,
-      bestExample: "(Screen recording of Maket app — visual curiosity only)",
-      bestViews: 506600,
-      timesUsed: 1,
-      status: "under-tested",
-      whyItWorks: "The 'proof-first / results' hook type — show the stunning output before explaining anything. The viewer's brain processes the visual and asks 'what app is that?' creating an organic curiosity loop without needing text. Feels less like an ad.",
-      researchBacking: "2026 UGC trends show 'value-first, feed-native' formats outperform scripted testimonials. Pure demo content feels organic and educational rather than promotional. The 'empty lot to dream home' transformation format is trending — Maket screen recordings naturally fit this. AI tool discovery content performs best when you show OUTPUT first, then reveal the tool.",
-      nextTests: [
-        "Screen recording: generate 5 floor plan variants in 30 seconds (trending audio)",
-        "Screen recording: type natural language prompt → watch AI generate floor plan",
-        "Split screen: hand-drawn sketch vs AI-generated floor plan from same prompt"
-      ]
-    },
-    {
-      name: "Slang Endorsement",
-      avgViews: 148950,
+      name: "Slang Endorsement (Caption Only)",
+      avgViews: 0,
       bestExample: "This website is so goated",
-      bestViews: 390700,
-      timesUsed: 12,
-      status: "fatigued",
-      whyItWorks: "Gen Z coded language signals authenticity and in-group belonging. Short and punchy — works as both text overlay and caption. Easy to produce, which is why it's been overused.",
-      researchBacking: "While effective initially, MarketingBlocks' research shows hook fatigue sets in after 2-3 weeks of the same formula. Jett has used 'goated' 12+ times. Algorithm may be suppressing repeat content patterns. Recommended: retire for 2-3 weeks, then rotate to new creators.",
+      bestViews: 0,
+      timesUsed: 0,
+      status: "caption-only",
+      whyItWorks: "CORRECTION: 'This website is so goated' was NEVER a video text overlay hook — it was only used as the SideShift/Instagram CAPTION. Every post with this caption actually had a different hook on the video itself (KISS, ChatGPT contrast, wasted effort, etc.). The caption is NOT what drives views — the video text overlay hook is.",
+      researchBacking: "The audit of all top 17 posts confirmed: zero posts used 'goated' as the actual video text overlay. This was a data error caused by reading SideShift captions instead of watching the actual videos.",
       nextTests: [
-        "Retire for 2-3 weeks. When reintroducing, give to fresh voices only (Paige, Mojan)."
+        "Not recommended as a video hook — it was never one to begin with."
       ]
     }
   ],
@@ -324,16 +325,16 @@ const DASHBOARD_DATA = {
       hook: "The contractor who saved my $40K renovation told me about this one website",
       category: "Storytelling Origin",
       assignTo: "Teya Pelletier",
-      platform: "TikTok + IG",
+      platform: "TikTok + IG + YouTube",
       priority: "high",
-      rationale: "Storytelling origin is the #1 hook (1.3M views) but was only used ONCE. This variant adds a financial stake ($40K) which triggers loss aversion. Teya has the emotional delivery to sell a story — her 7.19% eng rate proves she connects with audiences. The 'contractor' character adds credibility specific to the renovation niche.",
+      rationale: "Storytelling origin is the highest avg-views hook (697K avg across 2 uses, 1.33M best). This variant adds a financial stake ($40K) which triggers loss aversion. Teya has the emotional delivery to sell a story — her 7.19% eng rate proves she connects with audiences. The 'contractor' character adds credibility specific to the renovation niche.",
       researchBasis: "Story hooks achieve 70%+ completion rates (Terra Market Group 2026). Financial stakes amplify emotional engagement. Renovation regret content outperforms aspirational content in the home niche."
     },
     {
       hook: "My architect friend showed me this at dinner and I haven't slept since",
       category: "Storytelling Origin",
       assignTo: "Dominik Babu",
-      platform: "IG",
+      platform: "TikTok + IG + YouTube",
       priority: "high",
       rationale: "Dominik has the best CPM ($0.26) — if this hook works, the ROI will be extraordinary. The 'architect friend' adds professional credibility. 'Haven't slept since' is hyperbolic enough to stop the scroll but believable enough to feel authentic. Tests if storytelling origin works across different creator personas.",
       researchBasis: "The curiosity-based reveal format is the #1 performing format for AI tool discovery content in 2026. Personal anecdotes score highest for perceived authenticity in UGC."
@@ -342,7 +343,7 @@ const DASHBOARD_DATA = {
       hook: "I spent 3 hours on Pinterest mood boards when THIS exists",
       category: "Competitor Contrast",
       assignTo: "Miftahol Jannah",
-      platform: "TikTok + IG",
+      platform: "TikTok + IG + YouTube",
       priority: "high",
       rationale: "Pinterest is the #1 place people go for home design inspiration — this directly attacks that workflow. 'THIS' creates the same open loop that made Jett's ChatGPT hook work (317K views, 2.50% eng). Miftahol's demo-style content pairs perfectly with showing the Maket output after the hook.",
       researchBasis: "Competitor contrast hooks tap into loss aversion — 2x more motivating than potential gains. Pinterest is the most relatable competitor for the home design audience. The open loop ('THIS') forces watch-through per OpusClip's hook formula research."
@@ -351,7 +352,7 @@ const DASHBOARD_DATA = {
       hook: "My architect charged me $5K for what this does in 2 minutes",
       category: "Wasted Effort + Financial",
       assignTo: "Kyle Poselero",
-      platform: "IG",
+      platform: "TikTok + IG + YouTube",
       priority: "high",
       rationale: "Kyle's audience is builder/contractor-focused — financial pain points resonate strongly with this demographic. The $5K figure is specific enough to be believable and shocking enough to stop the scroll. Combines wasted money AND wasted time for double FOMO. ADU/income suite content driven by financial motivation outperforms pure aesthetics.",
       researchBasis: "Financial angles consistently outperform pure aesthetic content in the renovation niche. Warning hooks are among the highest performers in 2026 (SendShort). Specific dollar amounts increase credibility and engagement vs vague claims."
@@ -360,7 +361,7 @@ const DASHBOARD_DATA = {
       hook: "POV: you just found out ChatGPT can't actually design floor plans",
       category: "Competitor Callout",
       assignTo: "Paige Eligon",
-      platform: "TikTok",
+      platform: "TikTok + IG + YouTube",
       priority: "medium",
       rationale: "Paige's 7.77% engagement rate is the highest on the roster — she needs a hook that can scale her reach. ChatGPT callout had the best engagement rate in the top 20. POV format is native to TikTok. This positions Maket as the solution to a problem millions of ChatGPT users have experienced. Tests if Paige can be the breakout TikTok star.",
       researchBasis: "Bold statement / controversy hooks create cognitive dissonance that drives engagement (Xwork Hook Matrix). ChatGPT has 200M+ users — massive addressable audience who've tried using it for design. POV format consistently trends on TikTok (Kapwing March 2026 trends)."
@@ -369,7 +370,7 @@ const DASHBOARD_DATA = {
       hook: "The open floor plan is dead. Here's what replaced it.",
       category: "Trend Jacking + Bold Statement",
       assignTo: "Jett Suherwan",
-      platform: "IG + TikTok",
+      platform: "TikTok + IG + YouTube",
       priority: "medium",
       rationale: "The 'broken floor plan' is THE biggest TikTok interior design trend of 2026 — opposition to open-plan layouts has become a genre. This hook rides that wave while naturally showcasing Maket's floor plan generation. Jett needs fresh hooks (not 'goated') and this trend gives him new material. Bold statements drive controversy and comments.",
       researchBasis: "Palm Beach Today and PORTER both identify the 'broken floor plan' as a top 2026 design trend. TikTok's algorithm rewards content tied to trending topics. Bold statement hooks create cognitive dissonance — viewers must engage to resolve the disagreement (Cloudix Digital 2026 hook science)."
@@ -378,25 +379,25 @@ const DASHBOARD_DATA = {
       hook: "3 floor plan mistakes that cost homeowners $50K (and how AI catches them)",
       category: "Warning / Negative Hook",
       assignTo: "Miftahol Jannah",
-      platform: "TikTok + IG",
+      platform: "TikTok + IG + YouTube",
       priority: "medium",
       rationale: "Warning hooks are the highest-performing category in 2026 UGC. This positions Maket not as a 'cool AI toy' but as a money-saving prevention tool — a stronger value prop. Miftahol's demo style works perfectly for showing the 'mistakes' and then the AI-corrected version.",
       researchBasis: "Loss aversion bias: people are 2x more motivated by avoiding losses than achieving gains. Warning/mistake content outperforms aspirational content in the renovation space."
     },
     {
-      hook: "Screen recording: scrolling Maket renders with trending audio (no text)",
-      category: "Pure Demo",
+      hook: "my interior design teacher is going to lose it when she sees this",
+      category: "Authority Defiance",
       assignTo: "Miftahol Jannah",
-      platform: "TikTok",
-      priority: "medium",
-      rationale: "Miftahol's #3 overall post (506K views) was a pure demo with no text hook. This format is massively under-tested with only 1 example. The 'empty lot to dream home' transformation format is trending in 2026. Pair with Don Toliver 'E85' or Harry Styles 'Aperture' for aesthetic appeal. No text = feels organic, not like an ad.",
-      researchBasis: "2026 UGC trends: value-first, feed-native formats outperform scripted testimonials (Influentials 2026). AI tool discovery content performs best with output-first approach (show the result, then reveal the tool). Trending audio boosts discoverability in TikTok's algorithm."
+      platform: "TikTok + IG + YouTube",
+      priority: "high",
+      rationale: "Miftahol's #3 overall post (506K views) used 'my architecture professor is going to HATE me' — Authority Defiance hook. This is a direct variant of what already worked for her. Authority Defiance is a brand new category with only 1 use but a 508K avg — massive potential. Double down on her proven angle.",
+      researchBasis: "Bold statement / controversy hooks are among the highest-converting types (Xwork 2026). Authority defiance taps into anti-establishment sentiment. Miftahol already proved she can execute this format — give her more variations to test."
     },
     {
       hook: "I asked AI to roast my floor plan. It was brutal.",
       category: "Pattern Interrupt + Humor",
       assignTo: "Teya Pelletier",
-      platform: "TikTok",
+      platform: "TikTok + IG + YouTube",
       priority: "low",
       rationale: "Humor hooks are under-represented in Maket's current content. 'Roast' format is hugely popular across TikTok. This creates curiosity (what did the AI say?) and entertainment value. Teya's expressive reactions would make this format shine. Tests a completely new angle for the brand.",
       researchBasis: "Pattern interrupt hooks break feed monotony and trigger dopamine (Xwork Hook Matrix). Humor content has higher share rates than educational content. Skits and humor-driven UGC are the #1 emerging format in 2026 (RevenueCat app UGC study)."
@@ -405,7 +406,7 @@ const DASHBOARD_DATA = {
       hook: "POV: AI just solved the housing crisis in your backyard",
       category: "Pattern Interrupt + ADU Trend",
       assignTo: "Kyle Poselero",
-      platform: "IG",
+      platform: "TikTok + IG + YouTube",
       priority: "low",
       rationale: "ADU (accessory dwelling unit) content is a massive underserved niche. Housing costs are driving interest in backyard suites and rental income. Kyle's builder persona is perfect for this angle. Financial motivation (rental income) drives higher engagement than pure aesthetics.",
       researchBasis: "ADU/income suite content is trending in 2026 renovation space. Financial motivation outperforms aesthetic motivation for engagement."
@@ -419,9 +420,9 @@ const DASHBOARD_DATA = {
       date: "2026-04-01",
       decisions: [
         { type: "watch", creator: "Ihasmim Amorim", action: "Check in — confirm account warm-up progress", reasoning: "0 posts so far but may still be in ramp-up phase. Give 1.5 weeks from start date before escalating.", outcome: "First posts within the week", result: "" },
-        { type: "test", creator: "Teya Pelletier", action: "Assign storytelling origin hook", reasoning: "Best eng rate (7.19%) + proven emotional delivery. Storytelling origin is the #1 hook but only used once.", outcome: "Target 500K+ views", result: "" },
+        { type: "test", creator: "Teya Pelletier", action: "Assign storytelling origin hook", reasoning: "Best eng rate (7.19%) + proven emotional delivery. Storytelling origin has the highest per-post avg (697K across 2 uses).", outcome: "Target 500K+ views", result: "" },
         { type: "test", creator: "Dominik Babu", action: "Assign storytelling origin hook", reasoning: "Best CPM ($0.26) — if the hook works, extraordinary ROI. His 452K post proves he can hit big numbers.", outcome: "Target 300K+ views", result: "" },
-        { type: "test", creator: "Miftahol Jannah", action: "Assign competitor contrast (Pinterest) + pure demo", reasoning: "Her demo style pairs perfectly with Maket screen recordings. Pinterest contrast hook attacks the #1 competitor workflow.", outcome: "Target 200K+ views", result: "" },
+        { type: "test", creator: "Miftahol Jannah", action: "Assign Authority Defiance variant + competitor contrast (Pinterest)", reasoning: "Her 506K post used Authority Defiance ('my professor is going to HATE me') — double down on what works. Also test Pinterest contrast as second angle.", outcome: "Target 200K+ views", result: "" },
         { type: "test", creator: "Kyle Poselero", action: "Assign financial wasted effort hook ($5K architect)", reasoning: "Builder audience responds to financial pain points. Specific dollar amounts increase credibility.", outcome: "Target 100K+ views", result: "" },
         { type: "scale", creator: "Jett Suherwan", action: "Refresh all hooks — retire 'goated', assign broken floor plan trend + competitor contrast", reasoning: "34K avg views but 'goated' used 12+ times — hook fatigue. Needs fresh angles. Broken floor plan is THE 2026 design trend.", outcome: "Maintain 30K+ avg with fresh hooks", result: "" },
         { type: "watch", creator: "Julian Gries", action: "Final hook test — 1 week deadline", reasoning: "$6.10 CPM, 687 avg views. Give competitor contrast hook. Must show dramatic improvement or cut.", outcome: "Must hit 10K+ views or terminate", result: "" },
@@ -431,6 +432,135 @@ const DASHBOARD_DATA = {
       ]
     }
   ],
+
+  // ── Weekend Briefs (per-creator action items) ──
+  weekendBriefs: {
+    targetDate: "Weekend of April 5-6",
+    note: "Post Saturday 10-11am for best home design engagement",
+    briefs: [
+      {
+        creator: "Jett Suherwan",
+        status: "star",
+        assignment: "Open Floor Plan Is Dead",
+        hookText: "The open floor plan is dead. Here's what replaced it.",
+        format: "Face reaction (shocked) + text overlay hook + Maket demo showing a broken-plan layout with partial walls and defined zones",
+        category: "Trend Jacking + Bold Statement",
+        why: "Broken floor plan is THE 2026 design trend. Replaces his overused 'goated' hook with fresh material. Controversial take = comments and shares.",
+        urgency: "briefed",
+        messageStatus: "Already briefed"
+      },
+      {
+        creator: "Teya Pelletier",
+        status: "active",
+        assignment: "Storytelling Origin Hook",
+        hookText: "The contractor who saved my $40K renovation told me about this one website",
+        format: "Face reaction (emotional/grateful) + text overlay hook + Maket demo. Her emotional delivery is her superpower — let it show in the reaction.",
+        category: "Storytelling Origin",
+        why: "Storytelling origin got 1.3M views but was only tested ONCE. Teya has the best engagement rate (7.19%) and proven emotional range. This is the highest-upside test.",
+        urgency: "brief-now",
+        messageStatus: "Send brief this week"
+      },
+      {
+        creator: "Dominik Babu",
+        status: "active",
+        assignment: "Storytelling Origin Hook",
+        hookText: "My architect friend showed me this at dinner and I haven't slept since",
+        format: "Face reaction (mind-blown) + text overlay hook + Maket demo. Keep it simple — his strength is consistency, not theatrics.",
+        category: "Storytelling Origin",
+        why: "Best CPM on the roster ($0.26). If this hook works with him, the ROI is unbeatable. His 452K post proves he can hit big numbers when the hook lands.",
+        urgency: "brief-now",
+        messageStatus: "Send brief this week"
+      },
+      {
+        creator: "Miftahol Jannah",
+        status: "active",
+        assignment: "Authority Defiance + Competitor Contrast",
+        hookText: "Authority Defiance: 'my interior design teacher is going to lose it when she sees this'. AND separately: 'I spent 3 hours on Pinterest mood boards when THIS exists'",
+        format: "Face reaction (mischievous/excited) + text overlay hook + Maket demo. Her 506K post used the Authority Defiance angle ('my architecture professor is going to HATE me') — lean into what already worked for her.",
+        category: "Authority Defiance + Competitor Contrast",
+        why: "Her 506K hit used Authority Defiance, NOT a pure demo — the audit confirmed text overlay was 'my architecture professor is going to HATE me.' Double down on what works for her. Also test Pinterest contrast as a second angle.",
+        urgency: "brief-now",
+        messageStatus: "Send brief this week"
+      },
+      {
+        creator: "Kyle Poselero",
+        status: "active",
+        assignment: "Financial Wasted Effort Hook",
+        hookText: "My architect charged me $5K for what this does in 2 minutes",
+        format: "Face reaction (frustrated/shocked) + text overlay hook + Maket demo. His builder audience responds to dollar amounts.",
+        category: "Wasted Effort + Financial",
+        why: "Builder/contractor audience = financial pain points land harder. Specific dollar amount ($5K) is believable and scroll-stopping. His delivery rate is solid (36/42).",
+        urgency: "brief-now",
+        messageStatus: "Send brief this week"
+      },
+      {
+        creator: "Julian Gries",
+        status: "at-risk",
+        assignment: "FINAL TEST — Discovery/FOMO Hook",
+        hookText: "I can't believe I didn't find this sooner",
+        format: "Face reaction (genuine surprise) + text overlay hook + Maket demo. This is a proven hook — just needs better execution.",
+        category: "Discovery / FOMO",
+        why: "Last chance. $6.10 CPM with 687 avg views. If this proven hook doesn't move the needle by next weekend, cut him.",
+        urgency: "brief-now",
+        messageStatus: "Send brief + deadline warning"
+      },
+      {
+        creator: "David Cole",
+        status: "at-risk",
+        assignment: "FINAL TEST — Hyperbolic Gratitude Hook",
+        hookText: "I could literally KISS the interior designer that showed me this",
+        format: "Face reaction (over-the-top grateful) + text overlay hook + Maket demo. Needs more energy and expression than he's been giving.",
+        category: "Hyperbolic Gratitude",
+        why: "Last chance. Worst CPM on roster ($7.48) with 402 avg views. Giving him the proven 'KISS' hook. If no improvement by next weekend, terminate.",
+        urgency: "brief-now",
+        messageStatus: "Send brief + deadline warning"
+      },
+      {
+        creator: "Kalyssa Tiffin",
+        status: "watch",
+        assignment: "Hook Intervention — Competitor Contrast",
+        hookText: "You're telling me I spent a year using ChatGPT to design my home when I could've just done THIS",
+        format: "Face reaction + text overlay hook + Maket demo. She posts a lot but nothing catches — this hook has a proven engagement rate (2.50%).",
+        category: "Competitor Contrast",
+        why: "156 posts but only 1,678 avg views. High volume means nothing without good hooks. The ChatGPT competitor contrast hook had the best engagement in the top 20. This is her intervention.",
+        urgency: "brief-now",
+        messageStatus: "Send brief this week"
+      },
+      {
+        creator: "Mojan M",
+        status: "watch",
+        assignment: "Test with Proven Hook",
+        hookText: "I could literally KISS the interior designer that showed me this",
+        format: "Face reaction (excited/grateful) + text overlay hook + Maket demo. Keep it simple — she's still new.",
+        category: "Hyperbolic Gratitude",
+        why: "Only 23 posts — too early to judge. One post hit 13.3K which shows potential. Give her a proven hook so we can measure her delivery, not the hook.",
+        urgency: "brief-now",
+        messageStatus: "Send brief this week"
+      },
+      {
+        creator: "Paige Eligon",
+        status: "watch",
+        assignment: "ChatGPT Competitor Callout (TikTok native)",
+        hookText: "POV: you just found out ChatGPT can't actually design floor plans",
+        format: "Face reaction (shocked realization) + text overlay hook + Maket demo. POV format is native to TikTok — lean into it.",
+        category: "Competitor Callout",
+        why: "7.77% engagement rate is the HIGHEST on the roster. She's TikTok-native which is valuable. Needs a hook that can scale her reach. ChatGPT callout had the best engagement in top 20.",
+        urgency: "brief-now",
+        messageStatus: "Send brief this week"
+      },
+      {
+        creator: "Ihasmim Amorim",
+        status: "watch",
+        assignment: "Check In — Confirm Warm-Up Progress",
+        hookText: "",
+        format: "No hook assignment yet. First need to confirm she's actively warming up her account and has access to everything she needs.",
+        category: "",
+        why: "0 posts so far but may be in account ramp-up phase. Don't assign hooks until you confirm she's ready. If no response or no posts after 1.5 weeks from start, escalate to at-risk.",
+        urgency: "check-in",
+        messageStatus: "Send check-in message"
+      }
+    ]
+  },
 
   // ── Trend Research Notes ──
   trendResearch: [

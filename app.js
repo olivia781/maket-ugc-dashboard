@@ -62,6 +62,7 @@ function initDashboard() {
   renderDecisions(D);
   renderResearch(D);
   renderPriorityActions(D);
+  renderWeekendBriefs(D);
 }
 
 // ═══ METRICS ═══
@@ -318,15 +319,21 @@ function renderResearch(D) {
   `).join('');
 }
 
-// ═══ PRIORITY ACTIONS ═══
+// ═══ PRIORITY ACTIONS (Overview summary) ═══
 function renderPriorityActions(D) {
+  const wb = D.weekendBriefs;
+  const sendCount = wb.briefs.filter(b => b.urgency === 'brief-now').length;
+  const warningCount = wb.briefs.filter(b => b.status === 'at-risk').length;
+  const checkInCount = wb.briefs.filter(b => b.urgency === 'check-in').length;
+  const briefedCount = wb.briefs.filter(b => b.urgency === 'briefed').length;
+
   const actions = [
-    { text: '<strong>TERMINATE Ihasmim Amorim</strong> — 0 posts, 0 views, 0 engagement. Immediate cut.' },
-    { text: '<strong>Brief Teya on storytelling origin hook</strong> — "The contractor who saved my $40K renovation..." Her 7.19% eng rate + emotional delivery = best candidate for the #1 hook category.' },
-    { text: '<strong>Brief Dominik on storytelling origin hook</strong> — His $0.26 CPM means any view increase has massive ROI leverage.' },
-    { text: '<strong>Refresh Jett\'s hooks</strong> — Retire "goated" (12+ uses, fatigued). Assign "broken floor plan" trend + competitor contrast angles.' },
-    { text: '<strong>Give Julian & David final hook tests</strong> — Both have 1 week. $6.10 and $7.48 CPM are unsustainable. If no improvement, cut both.' },
-    { text: '<strong>Enforce two-layer hook format on ALL creators</strong> — Every video = expressive face reaction (0-1s) + text overlay hook (0-2s) + Maket demo. No spoken hooks. The silence is what makes it feel native.' },
+    { text: `<strong>Send hook briefs to ${sendCount} creators</strong> — Each creator has a specific hook and format assigned. Go to the <a href="#" onclick="document.querySelector('[data-tab=briefs]').click(); return false;" style="color:#a5b4fc;text-decoration:underline;">Weekend Brief</a> tab for details.` },
+    { text: `<strong>${warningCount} creators on final warning</strong> — Julian ($6.10 CPM) and David ($7.48 CPM) get one last hook test. If no improvement by next weekend, cut both.` },
+    { text: `<strong>${checkInCount} creator check-in needed</strong> — Ihasmim has 0 posts. Confirm she's warming up before assigning hooks.` },
+    { text: `<strong>${briefedCount} creator already briefed</strong> — Jett has the "open floor plan is dead" hook. Monitor for weekend posting.` },
+    { text: '<strong>Post timing: Saturday 10-11am</strong> — Weekend posting when people are home scrolling. Best window for home design content.' },
+    { text: '<strong>Enforce two-layer format on ALL videos</strong> — Face reaction (0-1s) + text overlay hook (0-2s) + Maket demo. No spoken hooks. The silence is what makes it feel native.' },
   ];
   document.getElementById('priority-actions').innerHTML = actions.map((a, i) => `
     <div class="priority-item">
@@ -334,4 +341,79 @@ function renderPriorityActions(D) {
       <div class="priority-text">${a.text}</div>
     </div>
   `).join('');
+}
+
+// ═══ WEEKEND BRIEFS ═══
+function renderWeekendBriefs(D) {
+  const wb = D.weekendBriefs;
+  const container = document.getElementById('weekend-briefs');
+
+  function urgencyLabel(b) {
+    if (b.urgency === 'briefed') return '<span class="brief-msg-status brief-msg-briefed">&#10003; Already Briefed</span>';
+    if (b.urgency === 'check-in') return '<span class="brief-msg-status brief-msg-checkin">&#9993; Send Check-In</span>';
+    if (b.status === 'at-risk') return '<span class="brief-msg-status brief-msg-warning">&#9888; Final Warning — Send Brief + Deadline</span>';
+    return '<span class="brief-msg-status brief-msg-send">&#9998; Send Brief This Week</span>';
+  }
+
+  function groupBriefs(briefs) {
+    const groups = {
+      'brief-now-risk': { label: 'Final Warning — Brief + Deadline', items: [] },
+      'brief-now': { label: 'Send Brief This Week', items: [] },
+      'briefed': { label: 'Already Briefed — Monitor', items: [] },
+      'check-in': { label: 'Check In', items: [] }
+    };
+    briefs.forEach(b => {
+      if (b.urgency === 'briefed') groups['briefed'].items.push(b);
+      else if (b.urgency === 'check-in') groups['check-in'].items.push(b);
+      else if (b.status === 'at-risk') groups['brief-now-risk'].items.push(b);
+      else groups['brief-now'].items.push(b);
+    });
+    return groups;
+  }
+
+  const groups = groupBriefs(wb.briefs);
+
+  let html = `
+    <div class="brief-header">
+      <h3>Weekend Creator Brief</h3>
+      <span class="brief-date">${wb.targetDate}</span>
+    </div>
+    <div class="brief-note">${wb.note}</div>
+  `;
+
+  Object.values(groups).forEach(group => {
+    if (group.items.length === 0) return;
+    html += `<div class="brief-section-label">${group.label} (${group.items.length})</div>`;
+    group.items.forEach(b => {
+      html += `
+        <div class="brief-card">
+          <div class="brief-card-top">
+            <div>
+              <div class="brief-creator">${b.creator}</div>
+              <div class="brief-assignment">${b.assignment}</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;">
+              ${statusBadge(b.status)}
+            </div>
+          </div>
+          ${b.hookText ? `
+          <div class="brief-hook-box">
+            <div class="brief-hook-label">Hook Text Overlay</div>
+            <div class="brief-hook-text">"${b.hookText}"</div>
+          </div>` : ''}
+          <div class="brief-format">
+            <div class="brief-format-label">Format Instructions</div>
+            ${b.format}
+          </div>
+          <div class="brief-why"><strong>Why this creator + this hook:</strong> ${b.why}</div>
+          <div class="brief-status-row">
+            ${urgencyLabel(b)}
+            ${b.category ? `<span style="font-size:11px;color:#666;">Category: ${b.category}</span>` : ''}
+          </div>
+        </div>
+      `;
+    });
+  });
+
+  container.innerHTML = html;
 }

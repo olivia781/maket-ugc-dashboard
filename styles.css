@@ -232,6 +232,66 @@ header h1 { font-size: 18px; font-weight: 700; color: #fff; }
 .priority-text { font-size: 13px; color: #ccc; }
 .priority-text strong { color: #fff; }
 
+/* ═══ WEEKEND BRIEFS ═══ */
+.brief-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 20px; flex-wrap: wrap; gap: 12px;
+}
+.brief-header h3 { font-size: 18px; font-weight: 700; color: #fff; margin: 0; }
+.brief-date {
+  padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 600;
+  background: rgba(99,102,241,0.15); color: #a5b4fc;
+}
+.brief-note { font-size: 12px; color: #888; margin-bottom: 20px; }
+.brief-card {
+  padding: 20px; border-radius: 12px; margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02);
+  transition: all 0.2s;
+}
+.brief-card:hover { border-color: rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); }
+.brief-card-top {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;
+}
+.brief-creator { font-size: 16px; font-weight: 700; color: #fff; }
+.brief-assignment { font-size: 14px; color: #a5b4fc; font-weight: 600; margin-top: 4px; }
+.brief-hook-box {
+  margin: 14px 0; padding: 14px 16px; border-radius: 10px;
+  background: rgba(99,102,241,0.08); border-left: 3px solid #6366f1;
+}
+.brief-hook-label {
+  font-size: 10px; color: #6366f1; text-transform: uppercase;
+  letter-spacing: 0.5px; font-weight: 700; margin-bottom: 6px;
+}
+.brief-hook-text { font-size: 15px; color: #fff; font-weight: 600; line-height: 1.4; }
+.brief-format {
+  margin: 10px 0; padding: 12px 14px; border-radius: 8px;
+  background: rgba(255,255,255,0.04); font-size: 13px; color: #ccc; line-height: 1.5;
+  border-left: 2px solid #4ade80;
+}
+.brief-format-label {
+  font-size: 10px; color: #4ade80; text-transform: uppercase;
+  letter-spacing: 0.5px; font-weight: 700; margin-bottom: 4px;
+}
+.brief-why { font-size: 12px; color: #888; line-height: 1.5; margin-top: 10px; }
+.brief-status-row {
+  display: flex; align-items: center; gap: 8px; margin-top: 12px;
+}
+.brief-msg-status {
+  display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px;
+  border-radius: 6px; font-size: 12px; font-weight: 600;
+}
+.brief-msg-briefed { background: rgba(16,185,129,0.12); color: #34d399; }
+.brief-msg-send { background: rgba(245,158,11,0.12); color: #fbbf24; }
+.brief-msg-checkin { background: rgba(59,130,246,0.12); color: #60a5fa; }
+.brief-msg-warning { background: rgba(239,68,68,0.12); color: #f87171; }
+
+.brief-section-label {
+  font-size: 12px; font-weight: 700; color: #666; text-transform: uppercase;
+  letter-spacing: 0.5px; margin: 24px 0 12px; padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.brief-section-label:first-child { margin-top: 0; }
+
 /* ═══ SCROLLBAR ═══ */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
