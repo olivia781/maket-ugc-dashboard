@@ -198,12 +198,12 @@ const DASHBOARD_DATA = {
       cpm: null,
       owed: 0,
       delivered: "0/42",
-      status: "fire",
-      trend: "none",
+      status: "watch",
+      trend: "new",
       topHook: "",
       topHookViews: 0,
-      action: "TERMINATE — zero posts delivered, zero engagement, zero views.",
-      notes: "0 posts out of 36 expected. Complete non-performer. Immediate termination recommended. Reallocate budget to scaling Jett, Teya, or hiring a replacement."
+      action: "CHECK IN — may still be warming up account. Give until 1.5 weeks before judging.",
+      notes: "0 posts so far but could be in account warm-up phase. Check in to confirm they're ramping up and have the hook briefs. If no posts after 1.5 weeks from start date, escalate to at-risk."
     }
   ],
 
@@ -217,7 +217,7 @@ const DASHBOARD_DATA = {
       timesUsed: 1,
       status: "under-tested",
       whyItWorks: "Curiosity + narrative = maximum watch-through. The brain needs to close the story loop. Research shows story hooks have the highest completion rates in 2026 UGC content. This format forces the viewer to watch the entire video to understand the origin story.",
-      researchBacking: "Terra Market Group's 2026 hook study found story hooks achieve 70%+ completion rates — the threshold needed for TikTok's algorithm to boost distribution. This aligns with the 'layered hook' strategy: visual interrupt + narrative promise + emotional payoff.",
+      researchBacking: "Terra Market Group's 2026 hook study found story hooks achieve 70%+ completion rates — the threshold needed for TikTok's algorithm to boost distribution. The winning Maket format is: expressive face reaction + text overlay hook + Maket demo. No spoken hook needed — the silence keeps it feeling native, not like an ad.",
       nextTests: [
         "The contractor who saved my $40K renovation told me about this one website",
         "My architect friend showed me this at dinner and I haven't slept since",
@@ -380,8 +380,8 @@ const DASHBOARD_DATA = {
       assignTo: "Miftahol Jannah",
       platform: "TikTok + IG",
       priority: "medium",
-      rationale: "Warning hooks are the highest-performing category in 2026 UGC. This positions Maket not as a 'cool AI toy' but as a money-saving prevention tool — a stronger value prop. Miftahol's demo style works perfectly for showing the 'mistakes' and then the AI-corrected version. Zoning compliance is Maket's killer differentiator that NO competitor has.",
-      researchBasis: "Loss aversion bias: people are 2x more motivated by avoiding losses than achieving gains. Warning/mistake content outperforms aspirational content in the renovation space. Maket's zoning compliance feature is unique — no competitor (Planner5D, HomeDesignsAI, REimagineHome) offers this."
+      rationale: "Warning hooks are the highest-performing category in 2026 UGC. This positions Maket not as a 'cool AI toy' but as a money-saving prevention tool — a stronger value prop. Miftahol's demo style works perfectly for showing the 'mistakes' and then the AI-corrected version.",
+      researchBasis: "Loss aversion bias: people are 2x more motivated by avoiding losses than achieving gains. Warning/mistake content outperforms aspirational content in the renovation space."
     },
     {
       hook: "Screen recording: scrolling Maket renders with trending audio (no text)",
@@ -407,8 +407,8 @@ const DASHBOARD_DATA = {
       assignTo: "Kyle Poselero",
       platform: "IG",
       priority: "low",
-      rationale: "ADU (accessory dwelling unit) content is a massive underserved niche. Housing costs are driving interest in backyard suites and rental income. Kyle's builder persona is perfect for this angle. Maket can generate ADU floor plans with zoning compliance — a unique selling point. Financial motivation (rental income) drives higher engagement than pure aesthetics.",
-      researchBasis: "ADU/income suite content is trending in 2026 renovation space. Financial motivation outperforms aesthetic motivation for engagement. Maket's zoning compliance is the only tool that can verify ADU plans meet local codes — massive differentiator."
+      rationale: "ADU (accessory dwelling unit) content is a massive underserved niche. Housing costs are driving interest in backyard suites and rental income. Kyle's builder persona is perfect for this angle. Financial motivation (rental income) drives higher engagement than pure aesthetics.",
+      researchBasis: "ADU/income suite content is trending in 2026 renovation space. Financial motivation outperforms aesthetic motivation for engagement."
     }
   ],
 
@@ -418,7 +418,7 @@ const DASHBOARD_DATA = {
       week: 1,
       date: "2026-04-01",
       decisions: [
-        { type: "fire", creator: "Ihasmim Amorim", action: "Terminate contract", reasoning: "0 posts delivered out of 36 expected. Zero engagement, zero views. Complete non-performer.", outcome: "", result: "" },
+        { type: "watch", creator: "Ihasmim Amorim", action: "Check in — confirm account warm-up progress", reasoning: "0 posts so far but may still be in ramp-up phase. Give 1.5 weeks from start date before escalating.", outcome: "First posts within the week", result: "" },
         { type: "test", creator: "Teya Pelletier", action: "Assign storytelling origin hook", reasoning: "Best eng rate (7.19%) + proven emotional delivery. Storytelling origin is the #1 hook but only used once.", outcome: "Target 500K+ views", result: "" },
         { type: "test", creator: "Dominik Babu", action: "Assign storytelling origin hook", reasoning: "Best CPM ($0.26) — if the hook works, extraordinary ROI. His 452K post proves he can hit big numbers.", outcome: "Target 300K+ views", result: "" },
         { type: "test", creator: "Miftahol Jannah", action: "Assign competitor contrast (Pinterest) + pure demo", reasoning: "Her demo style pairs perfectly with Maket screen recordings. Pinterest contrast hook attacks the #1 competitor workflow.", outcome: "Target 200K+ views", result: "" },
@@ -444,18 +444,10 @@ const DASHBOARD_DATA = {
     },
     {
       date: "2026-04-01",
-      title: "Layered Hook Strategy (90% Retention)",
-      source: "Terra Market Group / Cloudix Digital",
-      summary: "Single hooks cap at 60% retention. Layered hooks hit 90%. Layer 1 (0-1s): visual interrupt. Layer 2 (1-2s): text overlay. Layer 3 (2-3s): verbal promise. All creators should implement this.",
-      actionable: "Brief ALL creators on layered hook structure. Every video should have: zoom/motion (0-1s) + text overlay (1-2s) + spoken hook (2-3s).",
-      priority: "high"
-    },
-    {
-      date: "2026-04-01",
-      title: "Zoning Compliance = Killer Differentiator",
-      source: "Competitor analysis (Planner5D, HomeDesignsAI, REimagineHome)",
-      summary: "NO competitor offers zoning code compliance. This is Maket's unique moat. Content angle: 'This AI knows your local building codes better than you do.' Also relevant for ADU content where zoning is the #1 barrier.",
-      actionable: "Create dedicated content series around zoning compliance. Test hook: '3 floor plan mistakes that cost $50K (and how AI catches them)'",
+      title: "Two-Layer Hook Formula (Maket's Winning Format)",
+      source: "SideShift top 10 post analysis + Terra Market Group / Cloudix Digital",
+      summary: "Every top-performing Maket post uses the same two-layer formula: Layer 1 (0-1s): creator's expressive face reaction (shock, disbelief, hand over mouth). Layer 2 (0-2s): text overlay with the hook — short, punchy, creates an open loop. NO spoken hook. The silence is what makes it feel native, not like an ad. This outperforms the industry-standard 3-layer approach because it matches how Maket's audience scrolls.",
+      actionable: "Enforce this format across ALL creators. Every video = expressive face + text overlay hook + Maket demo. Never open with speaking or 'Hey guys.' The text does the work.",
       priority: "high"
     },
     {
@@ -470,7 +462,7 @@ const DASHBOARD_DATA = {
       date: "2026-04-01",
       title: "ADU / Income Suite Content Gap",
       source: "Renovation trend research",
-      summary: "Accessory dwelling units (backyard suites, basement apartments) are trending due to housing costs. Financial motivation (rental income) drives higher engagement than aesthetics. Maket's zoning compliance makes it the ideal tool for ADU planning.",
+      summary: "Accessory dwelling units (backyard suites, basement apartments) are trending due to housing costs. Financial motivation (rental income) drives higher engagement than aesthetics. Maket's AI floor plan generation makes it a natural fit for ADU planning content.",
       actionable: "Give Kyle Poselero the ADU angle — his builder persona fits. Test: 'POV: AI just solved the housing crisis in your backyard'",
       priority: "medium"
     },

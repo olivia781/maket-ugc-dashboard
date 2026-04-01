@@ -326,7 +326,7 @@ function renderPriorityActions(D) {
     { text: '<strong>Brief Dominik on storytelling origin hook</strong> — His $0.26 CPM means any view increase has massive ROI leverage.' },
     { text: '<strong>Refresh Jett\'s hooks</strong> — Retire "goated" (12+ uses, fatigued). Assign "broken floor plan" trend + competitor contrast angles.' },
     { text: '<strong>Give Julian & David final hook tests</strong> — Both have 1 week. $6.10 and $7.48 CPM are unsustainable. If no improvement, cut both.' },
-    { text: '<strong>Brief ALL creators on layered hook strategy</strong> — Visual interrupt (0-1s) + text overlay (1-2s) + verbal hook (2-3s). Single hooks cap at 60% retention; layered hits 90%.' },
+    { text: '<strong>Enforce two-layer hook format on ALL creators</strong> — Every video = expressive face reaction (0-1s) + text overlay hook (0-2s) + Maket demo. No spoken hooks. The silence is what makes it feel native.' },
   ];
   document.getElementById('priority-actions').innerHTML = actions.map((a, i) => `
     <div class="priority-item">
