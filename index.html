@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maket UGC Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="data.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══ LOGIN GATE ═══ -->
+<div id="login-screen">
+  <div class="login-box">
+    <div class="login-logo">M</div>
+    <h1>Maket UGC Command Center</h1>
+    <p>Enter password to access the dashboard</p>
+    <form id="login-form">
+      <input type="password" id="password-input" placeholder="Password" autocomplete="off">
+      <button type="submit">Enter</button>
+    </form>
+    <p id="login-error" class="error-msg"></p>
+  </div>
+</div>
+
+<!-- ═══ DASHBOARD ═══ -->
+<div id="dashboard" class="hidden">
+
+  <!-- Top Bar -->
+  <header>
+    <div class="header-left">
+      <div class="logo">M</div>
+      <div>
+        <h1>UGC Command Center</h1>
+        <p class="subtitle">Maket.ai Creator Performance & Hook Strategy</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <span id="last-updated"></span>
+      <button onclick="document.getElementById('dashboard').classList.add('hidden'); document.getElementById('login-screen').classList.remove('hidden');" class="btn-logout">Logout</button>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="tabs">
+    <button class="tab active" data-tab="overview">Overview</button>
+    <button class="tab" data-tab="creators">Creators</button>
+    <button class="tab" data-tab="hooks">Hook Lab</button>
+    <button class="tab" data-tab="testing">Test Pipeline</button>
+    <button class="tab" data-tab="decisions">Weekly Decisions</button>
+    <button class="tab" data-tab="research">Trend Research</button>
+  </nav>
+
+  <!-- ═══ OVERVIEW TAB ═══ -->
+  <section id="tab-overview" class="tab-content active">
+    <div class="metrics-grid" id="metrics-grid"></div>
+    <div class="two-col">
+      <div class="card">
+        <h3>Creator Performance (Views)</h3>
+        <canvas id="chart-creator-views"></canvas>
+      </div>
+      <div class="card">
+        <h3>Cost Efficiency (CPM)</h3>
+        <canvas id="chart-cpm"></canvas>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <h3>Status Breakdown</h3>
+        <canvas id="chart-status"></canvas>
+      </div>
+      <div class="card">
+        <h3>Delivery Rate</h3>
+        <canvas id="chart-delivery"></canvas>
+      </div>
+    </div>
+    <div class="card">
+      <h3>This Week's Priority Actions</h3>
+      <div id="priority-actions"></div>
+    </div>
+  </section>
+
+  <!-- ═══ CREATORS TAB ═══ -->
+  <section id="tab-creators" class="tab-content">
+    <div class="card">
+      <div class="card-header">
+        <h3>Creator Roster</h3>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="star">Stars</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="watch">Watch</button>
+          <button class="filter-btn" data-filter="at-risk">At Risk</button>
+          <button class="filter-btn" data-filter="fire">Fire</button>
+        </div>
+      </div>
+      <div id="creators-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══ HOOKS TAB ═══ -->
+  <section id="tab-hooks" class="tab-content">
+    <div class="card">
+      <h3>Hook Category Performance</h3>
+      <p class="card-subtitle">Research-backed analysis of what's working and why</p>
+      <div id="hook-categories"></div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTING TAB ═══ -->
+  <section id="tab-testing" class="tab-content">
+    <div class="card">
+      <div class="card-header">
+        <h3>Hook Testing Pipeline</h3>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="high">High Priority</button>
+          <button class="filter-btn" data-filter="medium">Medium</button>
+          <button class="filter-btn" data-filter="low">Low</button>
+        </div>
+      </div>
+      <div id="testing-pipeline"></div>
+    </div>
+  </section>
+
+  <!-- ═══ DECISIONS TAB ═══ -->
+  <section id="tab-decisions" class="tab-content">
+    <div id="decisions-log"></div>
+  </section>
+
+  <!-- ═══ RESEARCH TAB ═══ -->
+  <section id="tab-research" class="tab-content">
+    <div id="research-notes"></div>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
